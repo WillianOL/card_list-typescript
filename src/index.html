@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anotações com Typescript</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <nav class="painelDeCriacao">
+    <h1>Criação de Notas</h1>
+    <form class="formularioDeNotas">
+      <div class="tituloEConteudo">
+        <label>
+          <h3 class="tituloSecao">Titulo:</h3>
+          <input type="text" name="titulo" id="titulo" data-inputValue="titulo">
+        </label>
+        <label>
+          <h3 class="tituloSecao">Conteúdo:</h3>
+          <textarea name="conteudo" id="conteudo" data-inputValue="texto"></textarea>
+        </label>
+      </div>
+      <div class="coresDasAnotacoes">
+        <h3 class="tituloSecao">Cor:</h3>
+        <ul>
+          <li>
+            <label class="cores">
+              <input type="radio" name="cor" checked data-cor="#e26698">
+            </label>
+          </li>
+          <li>
+            <label class="cores">
+              <input type="radio" name="cor" data-cor="#5278d1">
+            </label>
+          </li>
+          <li>
+            <label class="cores">
+              <input type="radio" name="cor" data-cor="rgb(129, 77, 197)">
+            </label>
+          </li>
+          <li>
+            <label class="cores">
+              <input type="radio" name="cor" data-cor="rgb(230, 132, 93)">
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="intervalo">
+        <label>
+          <h3 class="tituloSecao">Data para conclusão:</h3>
+          <input type="date" name="data" id="lembrete" data-inputValue="lembrete">
+        </label>
+      </div>
+      <div class="conteinerBotao">
+        <button type="submit" id="botaoEnviar">Criar anotação</button>
+      </div>
+    </form>
+  </nav>
+  <main class="conteinerAnotacoes">
+    <h1>Painel de notas</h1>
+    <ul class="conteinerDeNotas">
+
+    </ul>
+  </main>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
