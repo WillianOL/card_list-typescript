@@ -23,7 +23,7 @@
 
 
 ## Sobre o projeto📃
-Esta é uma to do list feita com typescript. O principal intuito desse projeto é exercitar meus conhecimentos sobre typescript, o que comecei a estudar recentemente. Nesse projeto pude aplicar as principais metodologias sobre tipagem do typescript, criando interfaces, tipagem de dados, type guards, control flow, classes, objetos e eventos.
+Esta é uma to do list feita com typescript. O principal intuito desse projeto é exercitar meus conhecimentos sobre typescript, o que comecei a estudar recentemente. Nesse projeto pude aplicar as principais metodologias sobre tipagem do typescript, criando interfaces, tipagem de dados, type guards, control flow, eventos, `class`, `object`, e `localStorage`.
  
 ### Deploy(vercel)✈
 
