@@ -27,7 +27,7 @@ Esta é uma to do list feita com typescript. O principal intuito desse projeto �
  
 ### Deploy(vercel)✈
 
-◻<a href="https://portifolio-plum-psi.vercel.app/">To Do List - Typescript</a>
+◻<a href="https://card-list-typescript.vercel.app/src/index.html">To Do List - Typescript</a>
 
 &nbsp;
 &nbsp;
