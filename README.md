@@ -34,3 +34,50 @@ Na aplicação, é possível adicionar um titulo, uma descrição da tarefa, sel
 
 &nbsp;
 &nbsp;
+
+## Explicação
+### Organização
+Para a organização do código, optei por usar os modulos, separando cada funcionaldiade em um arquivo separado. O que com o typescript foi facilidado ainda mais, pois algumas funções eu usei em outras e os argumentos são requisitados e mostrando seu tipo.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/88923324-4264-451a-b8b0-22603d8e0a66" width='250px'>
+</div>
+
+### `takeValuesInputs.ts` - Seleção dos valores dos inputs
+Essa função foi criada para pegar os valores dos inputs e validar se estão preenchidos corretamente. Utilizando outra função de error, para caso a validação retorne um error e para o envio do dos inputs. Anotados os tipos e validando para garantir que os dados terão os tipos corretos com o typescript. Utilizando por exemplo o `instanceof`.
+
+#### Inputs, botão de submit e função que dispara ao clique do botão.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/aefc01da-7452-49ba-845a-3a48e0d22973" width='750px'>
+</div>
+&nbsp;
+
+A função `validateInputs` recebe a array de elementos, depois é feito um find para verificar se algum dos campos não está preenchido retornando `true` ou `false`. Se for true, executa a função de error `serNewError`.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/5bee4628-3841-43ea-a9ca-033365fb5217" width='750px'>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
