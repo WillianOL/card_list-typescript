@@ -55,12 +55,27 @@ A função `validateInputs` recebe a array de elementos, depois é feito um find
 <div align='center'>
 	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/5bee4628-3841-43ea-a9ca-033365fb5217" width='750px'>
 </div>
+&nbsp;
 
+Se todos os inputs estiverem preenchidos, no `else` cria duas váriaveis `value` e `name` para armazenar o valor do input e seu name. Depois é feito um map pegando todos os valores e name dos inputs,  retornando em um objeto com as propriedades `itemValue` e `itemName`.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/b243955c-456f-47b6-8c40-4973239e2619" width='750px'>
+</div>
+&nbsp;
 
+Ao final, a função `createNotes` e executada passando o objeto com os valores dos inputs(para criação das notas). Depois, selecionando o botão de deletar que cada card vai ter e executando sua função. Utilizei esta forma, pois para adicionar o evento aos botões eles precisam existir no html e a função sempre é executada quando o botão de adicionar um card é clicado. Ao final, executando a função de error passando `false` para retiralo da tela. 
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/2d0f4f42-a9a8-4410-82de-977ecab27d19" width='750px'>
+</div>
 
+### `createNote` - Criação das notas a partir de uma classe.
+A função recebe um array de itens com a interface `itemsEstruture`. Depois é feito um filtro para pegar cada informação para a construção do card, como `title`, `text` e `reminder`. Depois o conteiner das notas é selecionado.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/6e58f711-d448-4af0-9c47-a6e629609178" width='750px'>
+</div>
+&nbsp;
 
-
-
+Depois é verificado se o conteiner é uma instancia de HTMLElement
 
 
 
