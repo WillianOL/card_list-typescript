@@ -68,20 +68,29 @@ Ao final, a função `createNotes` e executada passando o objeto com os valores 
 	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/2d0f4f42-a9a8-4410-82de-977ecab27d19" width='750px'>
 </div>
 
-### `createNote` - Criação das notas a partir de uma classe.
+### `createNote` - Filtragem dos dados e inicio da criação.
 A função recebe um array de itens com a interface `itemsEstruture`. Depois é feito um filtro para pegar cada informação para a construção do card, como `title`, `text` e `reminder`. Depois o conteiner das notas é selecionado.
 <div align='center'>
 	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/6e58f711-d448-4af0-9c47-a6e629609178" width='750px'>
 </div>
 &nbsp;
 
-Depois é verificado se o conteiner é uma instancia de HTMLElement
+Para a criação das notas/cards, criei uma classe `Note` que tem a instancia `NoteEstruture`, onde o tipo de cada propriedade do card é anotado. Nele, passando a `color` que vem da função de selecionar as cores e um id que é gerado aleatóriamente.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/d369951b-1b99-4fe2-ae5c-765725981a97" width='750px'>
+</div>
 
+### `Note` - Classe para a construção das notas.
+A classe recebe um objeto que tem a interface `NoteEstruture` para a anotação do tipo de cada propriedade e definição do shapa do objeto. No método `createNote` a array de todas as notas recebe a nova nota em forma de objeto. Setando ela no localStorage e executando ao final a função `insertNote`.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/abe73724-ab8a-42df-8a24-2183ae2ad007" width='750px'>
+</div>
+&nbsp;
 
-
-
-
-
+O método `insertNote` serve para colocar a nota em tela/html, usando as informações passadas para a criação da nota.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/50c14b0f-2c54-4c45-82b3-e96e8312ac9f" width='750px'>
+</div>
 
 
 
