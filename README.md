@@ -87,10 +87,45 @@ A classe recebe um objeto que tem a interface `NoteEstruture` para a anotação 
 </div>
 &nbsp;
 
-O método `insertNote` serve para colocar a nota em tela/html, usando as informações passadas para a criação da nota.
+O método `insertNote` serve para colocar a nota em tela/html, usando as informações passadas para a criação da nota. Dessa forma, quando a classe `Note` é chamada, para inserir a nota o método `createNote` tem que ser executado.
 <div align='center'>
 	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/50c14b0f-2c54-4c45-82b3-e96e8312ac9f" width='750px'>
 </div>
+
+### `colorSelect` - Seleção da cor da nota.
+A função `colorSelect` foi criada para realizar a seleção da cor da nota a partir da seleção dos botões. Primeiro no `index.ts` é selecionado os botões das cores e a função passando a NodeList dos botões para que o evento de click seja adicionado aos botões.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/c9d527bb-e9b3-4be3-bae7-9544ee4a4639" width='750px'>
+</div>
+&nbsp;
+
+Na função, primeiro criei uma variável para armazenar a cor que vai ser selecionada. Pois, na NodeList de botões `botoes` primeiro é adicionado a classe "selecionado" no primeiro botões para indicar qual cor está selecionado como padrão. Neles, fiz um `foreach` adicionando o evento de click a cada botão.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/5496173b-075c-4833-8daf-b184f9888fc6" width='750px'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/462650a6-9be7-431f-aea0-0453a05015c1" width='750px'>
+</div>
+&nbsp;
+
+Depois, na função `colorSeleted` é feito a funcionalidade de adicionar ou remover a classe "selecionado" e a variável da cor recebe o valor do atributo `data-cor`.
+<div align='center'>
+	<img src= "https://github.com/WillianOL/card_list-typescript/assets/112639055/bfb7358f-a056-42f6-8058-6fe2ffe72a09" width='750px'>
+</div>
+&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
